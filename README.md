@@ -8,7 +8,7 @@ Saber cuál es la ruta de menor distancia entre $n$ museos deja de ser facil cua
 ### Licenciatura en Ciencia de Datos
 ### Jerónimo Jahir Avendaño Pachuca
 #### Bajo la supervisión de
-### Mtro. Pablo Martinéz Castro
+### Mtro. Pablo Martínez Castro
 ---
 ## Indice
 1. [¿Cómo sabemos que es la mejor ruta?](#Algo1)
