@@ -11,8 +11,18 @@ Saber cuál es la ruta de menor distancia entre $n$ museos deja de ser facil cua
 ### Mtro. Pablo Martinéz Castro
 ---
 ## Indice
---
-## ¿Cómo sabemos que es la mejor ruta?
+1. [¿Cómo sabemos que es la mejor ruta?](#Algo1)
+    1. [Busqueda Completa](#Algo1.1)
+    2. [Clusters](#Algo1.2)
+2. [Implementación de la Busqueda Completa](#Algo2)
+3. [Implementación de la asignación por Cluster](#Algo3)
+4. [Paralelización](#Algo4)
+5. [Tiempo Secuencial vs Paralelo](#Algo5)
+6. [Descarga del Repositorio](#Algo6)
+   1. [Compilar](#Algo6.1)
+   2. [Ejecutar](#Algo6.2)
+---
+## ¿Cómo sabemos que es la mejor ruta? <a name="Algo1"></a>
 Si tenemos dos museos que visitar, digamos A y B, contamos con 2 formas de hacerlo:
 - Empezamos en A y terminamos en B
 - Empezamos en B y terminamos en A
@@ -25,7 +35,7 @@ Si contamos con tres museos a los que visitar, A, B, C; se cuentan con 6 formas 
 Si contamos con conocimientos en combinatoria, vemos que esto va creciendo a un ritmo de $n!$. Por ello es un algoritmo en donde se puede obtener una gran ganacia en terminos de eficiencia si usamos el paradigma concurrente.
 
 **¿Cómo?**
-### Busqueda Completa
+### Busqueda Completa <a name="Algo1.1"></a>
 Se toma un museo, digamos $m_1$, y se obtiene la distancia que hay de $m_1$ a los demás museos, luego para cada museo que resta se obtiene la distancia con sin él y $m_1$, así sucesivamente hasta que solo quede un museo, cuya distancia a sí mismo es 0, regresando la distancia recorrida y el orden en que fueron visitados los museos.
 
 Comparamos la distancia total recorrida en cada ruta completa de $m_1$ a los demás museos y guardamos la ruta con la menor distancia.
@@ -33,7 +43,7 @@ De este modo aseguramos recuperar en cada subbusqueda la menor de las rutas.
 
 Sabemos que $n!$ es una de las mayores complejidades en notación asintotica  por lo que con $n=10$, ya contamos con $3,628,000$ posibles caminos que evaluar. Aunque una máquina sea capaz de resolver esta tarea en milisegundo, con aumentar la cantidad de museos a $12$ pasaría a tardarse muchos minutos y con $14$ ya son horas. Es necesario encontrar otra forma de abordar este problema para no hacer una busqueda completa sobre los $182$ museos que tiene la CDMX, para ello se recurrio al algoritmo de Clusterización.
 
-### Clusters
+### Clusters <a name="Algo1.2"></a>
 O grupos, por su traducción al español, es una estrategia para separar y dividir un conjunto con muchos elementos. La idea es la sigueinte:
 - Definir la cantidad de Clusters
 - Seleccionar al azar tantos nodos como Clusters haya, cada uno de ellos será el centro del cluster
@@ -41,7 +51,7 @@ O grupos, por su traducción al español, es una estrategia para separar y divid
 2. Asignar el nuevo centro de cada cluster a partir de los nodos contenidos en él.
 3. Si el centro del cluster no cambio con respecto a la iteración anterior, entonces termina el algoritmos, si cambia se repite desde el paso 1.
 
-## Implementación de la Busqueda Completa
+## Implementación de la Busqueda Completa <a name="Algo2"></a>
 ~~~java
 if(museosRestantes.size()==0){
     this.FIN[0] = (Double)0.0;
@@ -91,7 +101,7 @@ if(museosRestantes.size()==0){
     //System.out.println(this.FIN[0]+","+this.FIN[1]);
 }
 ~~~
-## Implementación de la asignación por Cluster
+## Implementación de la asignación por Cluster <a name="Algo3"></a>
 ~~~java
 do {
     List<Integer> preClusters = new ArrayList<>();
@@ -171,7 +181,7 @@ do {
 
 }while (shouldIncrementClusters);
 ~~~
-## Paralelización
+## Paralelización <a name="Algo4"></a>
 Despues de correr el código de Clusterización nos dimos cuenta que converge muy rápido, por lo que una paralelización tendría un mínimo impacto sobre el tiempo de ejecución del algoritmo, no así con la Busqueda completa y al ser un algoritmo recursivo la paralelización se logra de manera muy rápida. de Modo que solo se hicieron algunos cambios, chequese
 ~~~java
 GrafoNucleo auxCluster = new GrafoNucleo(auxMuseosRestantes, auxInicial, auxRuta);
@@ -185,23 +195,28 @@ auxCluster.BusquedaCompleta();
 auxClusters2[i] = auxCluster;
 ~~~
 Donde GrafoNucleo es una clase que hereda los atributos de la clase Thread de Java y GrafoSecuencial es la versión secuencial del algoritmo.
-## Tiempo secuencial vs Paralelo
+## Tiempo secuencial vs Paralelo <a name="Algo5"></a>
 Los siguientes _pantallazos_ muestran la cantidad de clusters generados, teniendo estos un límite de 11 museos (a lo más), el tiempo que tardó la versión paralela vs la secuencial. Adicionalmente añado la ganacia de eficiencia (tiempo secuencial/tiempo paralelo) y la cantidad de museos que se visitaron.
 
-![image](https://github.com/JeroJAvenPa/BestWayBetweenMuseums/assets/111100048/73e6d119-3933-4667-bd36-a9fb55b91c63)
-Ganacia:$310.56%$ con 93 museos visitados.
+![image](https://github.com/JeroJAvenPa/BestWayBetweenMuseums/assets/111100048/73e6d119-3933-4667-bd36-a9fb55b91c63) \
+Ganacia: $310.56\%$ con 93 museos visitados.
 
-![image](https://github.com/JeroJAvenPa/BestWayBetweenMuseums/assets/111100048/7c65a6af-9b23-4d2f-beb5-f809bbcbacb9)
-Ganancia:$395.57%$ con 93 museos visitados.
+![image](https://github.com/JeroJAvenPa/BestWayBetweenMuseums/assets/111100048/7c65a6af-9b23-4d2f-beb5-f809bbcbacb9) \
+Ganancia: $395.57\%$ con 93 museos visitados.
 
-![image](https://github.com/JeroJAvenPa/BestWayBetweenMuseums/assets/111100048/7e3918b0-872c-455b-8b74-274243fa2a56)
-Ganancia:$418.45%$ con 23 museos visitados.
+![image](https://github.com/JeroJAvenPa/BestWayBetweenMuseums/assets/111100048/7e3918b0-872c-455b-8b74-274243fa2a56) \
+Ganancia: $418.45\%$ con 23 museos visitados.
 
-![image](https://github.com/JeroJAvenPa/BestWayBetweenMuseums/assets/111100048/0470efee-de93-4db5-82c9-e3346714085e)
-Ganancia:$408.13%$ con 182 museos visitados.
+![image](https://github.com/JeroJAvenPa/BestWayBetweenMuseums/assets/111100048/0470efee-de93-4db5-82c9-e3346714085e) \
+Ganancia: $408.13\%$ con 182 museos visitados.
 
-## Descarga del Repositorio
+## Descarga del Repositorio <a name="Algo6"></a>
 Puede ser descargado en su totalidad o con los archivos "App.Java", "prueba.html", "pom.xml" y "museos.csv", recomendamos que sea en su totalidad para accesibilidad del usuario.
 
-### Compilar se 
+### Compilar <a name="Algo6.1"></a>
+Se debe de tener instalado en las variables de sistema mvn o en su defecto, descargar la carpeta en la ubicación de ...\maven\bin. Si cumple con los requisitos puede ejecutar sin problemas
+``mvn compile``
 
+### Ejecutar <a name="Algo6.2"></a>
+Análogamente, si tiene instalado maven, ejecute
+``mvn exec:java``
