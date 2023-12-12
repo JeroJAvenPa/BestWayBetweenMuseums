@@ -1,0 +1,183 @@
+museo_id,museo_nombre,gmaps_latitud,gmaps_longitud,municipio_id,nom_mun
+727,Museo de  Azcapotzalco ,31137.999999999978,-24966.000000000575,2,Azcapotzalco
+1233,Museo Tezozomoc,30673.999999999778,-24693.000000000608,2,Azcapotzalco
+852,Museo del Retrato Hablado (Cerrado por remodelacion),16894.999999999884,-21173.000000000287,3,Coyoacan
+978,Museo Nacional de las Intervenciones,16463.999999999858,-18879.000000001157,3,Coyoacan
+2205,Pabellon Nacional de la Biodiversidad. Museo interactivo y espacio de investigacion,12178.999999999718,-22343.000000000757,3,Coyoacan
+507,Museo Universitario de Ciencias y Artes (MUCA) ,14095.999999999975,-22772.000000000502,3,Coyoacan
+1224,Museo Universitario de Arte Contemporaneo (MUAC),12441.999999999709,-22538.000000000124,3,Coyoacan
+1476,Museo del Ejercito y Fuerza Aerea ,16110.99999999972,-18518.000000000255,3,Coyoacan
+396,Museo de Anatomopatologia Veterinaria Manuel H. Sarvide,13899.999999999935,-21774.000000000626,3,Coyoacan
+442,Museo Anahuacalli,13269.999999999982,-18451.000000000306,3,Coyoacan
+976,Museo Nacional de Culturas Populares,15987.999999999758,-20098.000000000127,3,Coyoacan
+287,Museo Frida Kahlo,16500.999999999876,-20221.0000000008,3,Coyoacan
+966,Museo Casa de Leon Trotsky,16765.999999999793,-19933.000000000335,3,Coyoacan
+2384,Casa Fuerte del Indio Fernandez,15790.999999999754,-21395.00000000112,3,Coyoacan
+789,Museo Nacional de la Acuarela Alfredo Guati Rojo,15857.999999999705,-21709.00000000131,3,Coyoacan
+449,Universum Museo de las Ciencias,12135.999999999925,-22057.000000000924,3,Coyoacan
+1821,Museo Miguel Hidalgo,16663.999999999745,-33896.000000000015,4,Cuajimalpa de Morelos
+1820,Museo Centro Cultural Nacional Pedro Infante ,16726.999999999847,-33932.00000000007,4,Cuajimalpa de Morelos
+906,Museo Bicentenario del Ex Convento del Desierto de los Leones,12302.999999999996,-35043.00000000029,4,Cuajimalpa de Morelos
+1285,Museo de los Ferrocarrileros,29141.99999999987,-15704.000000000917,5,Gustavo A. Madero
+732,Museo de Figuras de Cera de la Villa,29565.999999999804,-15735.00000000081,5,Gustavo A. Madero
+908,Museo de Geologia y Paleontologia,31850.000000000022,-17176.00000000061,5,Gustavo A. Madero
+728,Museo de la Basilica de Guadalupe,29550.000000000055,-15667.000000000542,5,Gustavo A. Madero
+1706,El Museo de Historia del Mormonismo en Mexico,27489.99999999988,-12759.000000001208,5,Gustavo A. Madero
+537,Planetario Luis Enrique Erro,30686.999999999996,-17982.000000000655,5,Gustavo A. Madero
+2234,Museo Diablos: Una Historia Incomparable,20589.999999999975,-13750.000000000284,6,Iztacalco
+2386,Planetario Katya Echazarreta,16900.000000000047,-13250.000000000739,7,Iztapalapa
+910,Museo Fuego Nuevo,15798.999999999807,-13101.00000000034,7,Iztapalapa
+531,Museo Comunitario de San Miguel Teotongo,15357.999999999805,-2766.0000000011564,7,Iztapalapa
+1877,Museo del Servicio de Transportes Electricos,17677.999999999727,-17383.000000000946,7,Iztapalapa
+2284,Museo-Observatorio Interactivo de Hundimiento y Fracturamiento (OIHFRA),17201.999999999985,-6043.000000001086,7,Iztapalapa
+1535,Museo de las Culturas Pasion por Iztapalapa,16751.999999999967,-12770.000000000437,7,Iztapalapa
+971,Antiguo Convento de San Juan Evangelista sede del Centro Comunitario Culhuacan,14996.99999999997,-14839.000000000624,7,Iztapalapa
+547,Museo Cabeza de Juarez,19270.999999999814,-7900.000000000773,7,Iztapalapa
+2256,Museo Barco Utopia,17643.99999999995,-9763.000000000942,7,Iztapalapa
+535,Museo Regional Altepepialcalli,213.99999999971442,-6159.000000000959,9,Milpa Alta
+730,"Museo Soumaya, Plaza Loreto",14933.999999999869,-23264.00000000035,10,Alvaro Obregon
+1578,Museo Interactivo de la Guardia Nacional (Cerrado temporalmente),20294.999999999774,-25801.000000001295,10,Alvaro Obregon
+2237,Museo del Axolote,16934.99999999979,-25711.00000000115,10,Alvaro Obregon
+794,Museo de Arte Alvar y Carmen T. de Carrillo Gil,15925.999999999973,-23033.000000000924,10,Alvaro Obregon
+855,Centro Cultural Isidro Fabela-Museo Casa del Risco,15503.999999999962,-23225.00000000076,10,Alvaro Obregon
+805,Museo Casa Estudio Diego Rivera y Frida Kahlo,15955.999999999904,-23733.000000000004,10,Alvaro Obregon
+2322,Museo Nacional de la Vivienda (Munavi),17065.999999999804,-22619.000000000255,10,Alvaro Obregon
+963,Museo de El Carmen,15503.999999999962,-22971.000000001142,10,Alvaro Obregon
+738,Museo Regional Comunitario Cuitlahuac,7770.00000000001,-4473.000000000127,11,Tlahuac
+2402,Museo Cielito Lindo,6401.99999999993,-5207.000000000051,11,Tlahuac
+1078,Museo Andres Quintana Roo,3528.00000000002,-455.0000000008936,11,Tlahuac
+1045,Museo Tomas Medina Villarruel,4645.00000000001,-3513.000000000943,11,Tlahuac
+1627,Museo del Tiempo Tlalpan (Cerrado temporalmente),9834.999999999995,-20753.000000000553,12,Tlalpan
+1811,Museo del Heroico Colegio Militar,6456.000000000017,-19019.00000000012,12,Tlalpan
+721,Museo de Sitio de Cuicuilco,11075.999999999909,-22175.00000000001,12,Tlalpan
+1547,Museo de la Casa de Cultura de la UAEMex ,9717.999999999805,-20964.00000000074,12,Tlalpan
+1991,Museo Casa Estudio Federico & Elsa,9588.999999999714,-21420.000000000528,12,Tlalpan
+2192,Museo Flor de Chinampas (Chinampaxochitl),7345.99999999972,-14472.000000000662,13,Xochimilco
+916,"Museo Dolores Olmedo (cerrado temporalmente, proxima apertura)",7568.999999999804,-16606.000000000164,13,Xochimilco
+917,Museo Arqueologico de Xochimilco,5706.999999999951,-11917.00000000111,13,Xochimilco
+1905,Museo del Metro,18610.999999999935,-22728.00000000075,14,Benito Juarez
+1245,Fundacion Maria y Hector Garcia,19265.000000000044,-18471.00000000097,14,Benito Juarez
+2161,Museo Estelar,19185.999999999836,-21578.000000000942,14,Benito Juarez
+1335,Casa Museo Benita Galeana,19280.999999999793,-18548.00000000125,14,Benito Juarez
+2156,Museo de Sitio de la Zona Arqueologica de Mixcoac,19631.000000000044,-22986.00000000022,14,Benito Juarez
+532,Museo Polyforum Siqueiros (Cerrado por remodelacion),20299.99999999994,-21332.00000000102,14,Benito Juarez
+1653,Museo de Arte en Azucar Mexico,19435.999999999964,-19733.0000000008,14,Benito Juarez
+1776,Planetario Joaquin Gallo,18361.999999999767,-19724.000000000786,14,Benito Juarez
+1550,Museo de Tecpan (Cerrado por remodelacion),25996.999999999916,-17421.00000000022,15,Cuauhtemoc
+771,Ex Teresa Arte Actual,24402.999999999865,-17075.00000000124,15,Cuauhtemoc
+476,Museo del Templo Mayor,24497.999999999818,-17101.000000000964,15,Cuauhtemoc
+802,Museo Nacional de las Culturas del Mundo,24270.999999999887,-17076.000000000135,15,Cuauhtemoc
+854,Palacio de Cultura Banamex (Palacio de Iturbide),24352.00000000002,-17906.000000000688,15,Cuauhtemoc
+1212,Museo Mexicano del Diseno (MUMEDI),24333.000000000025,-17460.00000000123,15,Cuauhtemoc
+2190,Museo del Perfume MUPE (Cerrado temporalmente),24594.9999999997,-17852.0000000006,15,Cuauhtemoc
+459,Museo Jose Luis Cuevas,24362.999999999956,-16912.00000000066,15,Cuauhtemoc
+344,Museo Experimental El Eco,24338.9999999998,-20126.000000000487,15,Cuauhtemoc
+710,Museo Ramon Lopez Velarde,22882.999999999854,-19824.000000001262,15,Cuauhtemoc
+1538,Museo Casa de la Memoria Indomita,23768.999999999705,-17481.00000000079,15,Cuauhtemoc
+403,Museo de la Luz,24626.99999999991,-17002.000000000804,15,Cuauhtemoc
+883,Museo de la Charreria,23601.99999999999,-17716.000000000065,15,Cuauhtemoc
+705,Museo Nacional de la Revolucion,24615.000000000007,-19445.000000000335,15,Cuauhtemoc
+1780,Museo del Bicentenario ,24376.99999999978,-18075.00000000033,15,Cuauhtemoc
+382,Museo Universitario del Chopo,25190.999999999876,-19677.000000000076,15,Cuauhtemoc
+811,Museo Manuel Tolsa,24572.99999999982,-17925.99999999993,15,Cuauhtemoc
+1617,Museo Galeria Nuestra Cocina Duque de Herdez,24365.999999999844,-17180.000000000462,15,Cuauhtemoc
+907,Museo del Telegrafo,24612.99999999973,-17902.00000000084,15,Cuauhtemoc
+691,Palacio de la Escuela de Medicina,24788.999999999818,-17332.000000000393,15,Cuauhtemoc
+757,Pinacoteca del Templo La Profesa (cerrada hasta nuevo aviso),24366.999999999807,-17633.00000000072,15,Cuauhtemoc
+692,Museo de Geologia,26017.99999999983,-19774.000000001026,15,Cuauhtemoc
+2110,Museo del Pulque y las pulquerias,24776.999999999916,-18740.000000001088,15,Cuauhtemoc
+1907,Museo de Sitio del Antiguo Hospital Concepcion Beistegui,23790.99999999994,-17836.000000001208,15,Cuauhtemoc
+2066,Museo Kaluz,24746.000000000022,-18589.000000000055,15,Cuauhtemoc
+1114,Museo Ferrocarrilero Victor Flores Morales,26382.99999999987,-19125.00000000108,15,Cuauhtemoc
+708,Museo del Instituto Cultural Mexico Israel,23963.999999999785,-17840.000000001055,15,Cuauhtemoc
+2069,Casa Museo Guillermo Tovar de Teresa,23004.999999999854,-20816.000000000655,15,Cuauhtemoc
+759,Museo de la Policia de la Ciudad de Mexico,24206.99999999982,-18657.000000000324,15,Cuauhtemoc
+1435,Museo de la Mujer,24943.000000000025,-17269.00000000029,15,Cuauhtemoc
+1600,"M68, Memorial de 1968 y Movimientos sociales",25987.9999999999,-17712.00000000022,15,Cuauhtemoc
+1105,Museo del Estanquillo,24330.99999999975,-17613.00000000006,15,Cuauhtemoc
+1313,Museo Memoria y Tolerancia,24414.999999999764,-18467.00000000112,15,Cuauhtemoc
+1464,Galerias de la Antigua Academia de San Carlos,24301.999999999778,-16878.000000001237,15,Cuauhtemoc
+15,Museo de lo Increible Ripley,23846.999999999953,-19671.000000001015,15,Cuauhtemoc
+1518,"Museo Xaltilolli, centro de interpretacion",25987.9999999999,-17712.00000000022,15,Cuauhtemoc
+2075,Museo Centro de la Imagen,23902.0,-18886.000000000535,15,Cuauhtemoc
+1867,Museo del Padre Pro,23245.999999999967,-20116.000000000156,15,Cuauhtemoc
+1092,Museo de Arte Popular ,24377.999999999745,-18630.00000000028,15,Cuauhtemoc
+2352,Salon de la Plastica Mexicana,22969.999999999756,-20115.00000000126,15,Cuauhtemoc
+711,Sala de la Odontologia Mexicana Dr. Samuel Fastlicht,24434.999999999716,-17074.00000000092,15,Cuauhtemoc
+1893,Museo UNAM Hoy,24366.999999999807,-17173.00000000108,15,Cuauhtemoc
+503,Herbario Medicinal del IMSS,21771.999999999993,-19325.000000000615,15,Cuauhtemoc
+2008,Museo Vizcainas,23830.999999999847,-18072.0000000008,15,Cuauhtemoc
+1516,Museo de las Constituciones,24648.99999999979,-16912.00000000066,15,Cuauhtemoc
+661,Museo Mural Diego Rivera,24603.999999999716,-18685.000000000684,15,Cuauhtemoc
+972,Museo del Ejercito y Fuerza Aerea Mexicanos de Bethlemitas (Cerrado Temporalmente),24558.000000000036,-17895.00000000004,15,Cuauhtemoc
+2067,Museo Salon de Cabildos del Antiguo Palacio del Ayuntamiento,24161.99999999975,-17404.00000000051,15,Cuauhtemoc
+1176,Museo Panteon de San Fernando ,24899.999999999876,-18787.000000000375,15,Cuauhtemoc
+1096,Museo Interactivo de Economia (MIDE),24515.999999999847,-17842.00000000027,15,Cuauhtemoc
+685,Museo Universitario de Ciencias y Artes (MUCA) Roma,22893.999999999793,-20305.000000000462,15,Cuauhtemoc
+1473,Museo del Tequila y el Mezcal (MUTEM),25056.999999999975,-17946.000000000597,15,Cuauhtemoc
+969,Museo del Calzado El Borcegui,24281.999999999825,-17856.00000000045,15,Cuauhtemoc
+804,Museo Nacional de San Carlos,24803.99999999996,-19190.000000000397,15,Cuauhtemoc
+1519,Museo de la Cancilleria,23968.999999999953,-17838.000000000422,15,Cuauhtemoc
+1523,Museo de Sitio ,24524.99999999986,-17262.00000000091,15,Cuauhtemoc
+2029,Museo Interactivo de la Bolsa Mexicana de Valores,23918.999999999713,-20448.00000000038,15,Cuauhtemoc
+462,Museo Franz Mayer,24725.999999999716,-18321.000000000255,15,Cuauhtemoc
+1560,"Museo Indigena, Antigua Aduana de Peralvillo",26156.999999999898,-17146.000000001037,15,Cuauhtemoc
+2202,Museo Banco de Mexico ,24490.99999999973,-18041.000000000906,15,Cuauhtemoc
+797,Museo de la Ciudad de Mexico,23915.999999999825,-17212.00000000067,15,Cuauhtemoc
+2236,Museo Art Toys (Cerrado temporalmente),24424.99999999974,-17854.000000001237,15,Cuauhtemoc
+2216,Casa Rivas Mercado,25038.999999999945,-18680.000000000517,15,Cuauhtemoc
+2238,Museo de Patologia Hospital General de Mexico Eduardo Liceaga,22297.00000000001,-19186.000000000546,15,Cuauhtemoc
+2239,Museo de la Inquisicion,24540.999999999967,-17519.000000000062,15,Cuauhtemoc
+1337,Museo Numismatico Nacional,24930.99999999977,-17020.000000000833,15,Cuauhtemoc
+2217,Galeria de Arte de la SHCP,24518.999999999734,-17374.00000000093,15,Cuauhtemoc
+733,Museo Recinto Homenaje a Cuauhtemoc,25996.999999999916,-17416.000000000055,15,Cuauhtemoc
+1491,Museo de Sitio de Tlatelolco Caja de Agua,26107.999999999975,-17731.000000000564,15,Cuauhtemoc
+1080,Museo del Palacio de Bellas Artes ,24564.99999999977,-18121.00000000072,15,Cuauhtemoc
+706,Museo de Sitio de la SEP,24693.99999999986,-17177.00000000093,15,Cuauhtemoc
+1469,Museo del Objeto del Objeto (MODO) (Cerrado temporalmente),23008.9999999997,-19904.000000001077,15,Cuauhtemoc
+2188,Casa-Estudio Leonora Carrington ,22800.99999999976,-19638.000000000487,15,Cuauhtemoc
+1992,Museo La Ciudad y la Torre a traves de los siglos,24396.999999999734,-18070.000000000164,15,Cuauhtemoc
+1532,Mundo Chocolate Museo (MUCHO),23929.000000000044,-19718.000000000302,15,Cuauhtemoc
+812,Museo Nacional de la Estampa (MUNAE),24686.99999999977,-18270.00000000112,15,Cuauhtemoc
+439,Museo Nacional de Arte (MUNAL),24637.999999999847,-17906.000000000688,15,Cuauhtemoc
+768,Antiguo Colegio de San Ildefonso,24584.999999999724,-17058.000000000106,15,Cuauhtemoc
+427,Laboratorio Arte Alameda,24639.999999999774,-18677.000000000986,15,Cuauhtemoc
+965,Museo Casa de Carranza,24117.999999999996,-20348.00000000132,15,Cuauhtemoc
+2391,Museo de Sitio San Sebastian Atzacoalco ,24192.999999999996,-17870.00000000063,15,Cuauhtemoc
+2360,Palacio Nacional,24250.999999999935,-17148.00000000025,15,Cuauhtemoc
+1079,Recinto Parlamentario,24248.000000000047,-17151.000000001204,15,Cuauhtemoc
+2168,Museo Foro Valparaiso,24141.999999999796,-17628.000000000553,15,Cuauhtemoc
+796,Museo de la Caricatura ,24558.999999999996,-17267.000000001077,15,Cuauhtemoc
+974,Recinto de Homenaje a Don Benito Juarez,24256.999999999705,-17155.99999999995,15,Cuauhtemoc
+968,Museo de Arte de la SHCP,24365.999999999844,-17135.00000000039,15,Cuauhtemoc
+707,Museo de Sitio del Centro Cultural Casa Talavera,23818.999999999945,-16747.000000000866,15,Cuauhtemoc
+1109,Museo Archivo de la Fotografia (MAF),24485.99999999992,-17214.000000001306,15,Cuauhtemoc
+1106,Museo del Juguete Antiguo Mexico,22531.000000000033,-18406.000000000233,15,Cuauhtemoc
+43,Museo de Cera de la Ciudad de Mexico,23837.999999999938,-19703.000000001226,15,Cuauhtemoc
+716,Museo Nacional de Arquitectura,24537.999999999727,-18129.00000000042,15,Cuauhtemoc
+689,Museo Postal y Filatelico,24572.99999999982,-18024.000000001193,15,Cuauhtemoc
+1232,Museo de Caballeria,26086.999999999705,-21576.000000000306,16,Miguel Hidalgo
+238,Museo de Historia Natural y Cultura Ambiental,21999.999999999887,-24154.000000000055,16,Miguel Hidalgo
+335,Museo Tamayo Arte Contemporaneo,23551.999999999753,-22173.000000000797,16,Miguel Hidalgo
+786,Sala de Arte Publico Siqueiros,23874.999999999956,-22736.000000000444,16,Miguel Hidalgo
+375,Papalote Museo del Nino Chapultepec,22151.999999999818,-23455.00000000129,16,Miguel Hidalgo
+1478,"Museo Soumaya, Plaza Carso",25065.99999999999,-24462.000000001182,16,Miguel Hidalgo
+673,Museo Nacional de Historia Castillo de Chapultepec,23035.999999999745,-22204.00000000069,16,Miguel Hidalgo
+2194,Cencalli: Casa del Maiz y la Cultura Alimentaria,22716.99999999974,-23199.99999999993,16,Miguel Hidalgo
+911,Mapoteca Manuel Orozco y Berra (MOB),21350.99999999994,-23625.00000000125,16,Miguel Hidalgo
+2166,Museo de la Brigada de Fusileros Paracaidistas,25184.999999999745,-26640.00000000044,16,Miguel Hidalgo
+548,Museo Casa de la Bola,21459.999999999724,-22867.000000000815,16,Miguel Hidalgo
+977,Museo Nacional de la Cartografia,21433.000000000036,-23171.000000000673,16,Miguel Hidalgo
+807,Museo Nacional de Antropologia (MNA),23610.000000000044,-22661.000000000797,16,Miguel Hidalgo
+658,Museo de Arte Moderno (MAM),23273.99999999997,-21954.000000000917,16,Miguel Hidalgo
+2064,Museo de Sitio y Centro de Visitantes del Bosque de Chapultepec,23095.0,-21926.000000000557,16,Miguel Hidalgo
+1874,Museo del Centenario del Ejercito Mexicano,25040.99999999987,-25577.000000001248,16,Miguel Hidalgo
+970," Galeria de Historia, Museo del Caracol",22894.999999999753,-22330.000000000895,16,Miguel Hidalgo
+1614,Museo de Geofisica,21486.999999999767,-23543.0000000008,16,Miguel Hidalgo
+1484,Museo Jumex,25040.99999999987,-24367.000000000873,16,Miguel Hidalgo
+502,"Mana, Museo de la Biblia",25314.9999999998,-20908.000000000015,16,Miguel Hidalgo
+2181,Museo Casa Presidencial Lazaro Cardenas,22485.0,-23182.000000001324,16,Miguel Hidalgo
+478,La Casa Luis Barragan,22109.999999999985,-23241.000000000156,16,Miguel Hidalgo
+2311,Anfibium: Museo del Axolote y Centro de Conservacion de Anfibios,23409.999999999796,-22957.00000000096,16,Miguel Hidalgo
+975,Museo Legislativo Los Sentimientos de la Nacion,23967.000000000025,-15790.000000001215,17,Venustiano Carranza
+1227,Sala de Exposiciones de la Terminal 2 del Aeropuerto Internacional de la Ciudad de Mexico Benito Juarez,23201.999999999854,-11831.000000000813,17,Venustiano Carranza

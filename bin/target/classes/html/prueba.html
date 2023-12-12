@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- Otros elementos del encabezado -->
+    </head>
+    <style>
+        #resultado { border:solid green 2px }    /* le ponemos colorcito a la cajita con el resultado */
+        .CajasDeTexto {background:Khaki}   /* Afectará a las cajas de texto */
+        INPUT[type=submit] {color:blue}
+    </style>
+    <script>
+        let cantidadNucleosSeleccionada = 1; // Variable para almacenar la cantidad seleccionada
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obtener el elemento select
+            const listaDesplegable = document.getElementById('nucleosLista');
+
+            // Realizar una solicitud al servidor para obtener la cantidad de núcleos
+            fetch('http://localhost:8080/?obtenerNucleos=1')
+                .then(response => response.json())
+                .then(data => {
+                    // Llenar la lista desplegable con la cantidad de núcleos
+                    for (let i = 1; i <= data.cantidadNucleos; i++) {
+                        const opcionElemento = document.createElement('option');
+                        opcionElemento.text = `${i} núcleos`;
+                        listaDesplegable.add(opcionElemento);
+                    }
+                })
+                .catch(error => console.error('Error al obtener la cantidad de núcleos:', error));
+        });
+
+        // Función para manejar la selección de la cantidad de núcleos
+        function seleccionarNucleos() {
+            const listaDesplegable = document.getElementById('nucleosLista');
+            cantidadNucleosSeleccionada = listaDesplegable.value;
+            console.log(`Cantidad de núcleos seleccionada: ${cantidadNucleosSeleccionada}`);
+            return cantidadNucleosSeleccionada.match(/\d+/)[0];
+        }
+    </script>
+    <body>
+        <!-- Lista desplegable para la cantidad de procesadores -->
+        <label for="nucleosLista">Cantidad de núcleos seleccionados:</label>
+        <select id="nucleosLista" onchange="seleccionarNucleos()">
+            <!-- Opciones se llenarán dinámicamente desde JavaScript -->
+        </select>
+        <!-- Línea divisoria -->
+        <hr>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Alcaldía</th>
+                    <th>Seleccionar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Azcapotzalco</td>
+                    <td><input type="checkbox" value="Azcapotzalco"></td>
+                </tr>
+                <tr>
+                    <td>Coyoacán</td>
+                    <td><input type="checkbox" value="Coyoacan"></td>
+                </tr>
+                <tr>
+                    <td>Cuajimalpa de Morelos</td>
+                    <td><input type="checkbox" value="Cuajimalpa de Morelos"></td>
+                </tr>
+                <tr>
+                    <td>Gustavo A. Madero</td>
+                    <td><input type="checkbox" value="Gustavo A. Madero"></td>
+                </tr>
+                <tr>
+                    <td>Iztacalco</td>
+                    <td><input type="checkbox" value="Iztacalco"></td>
+                </tr>
+                <tr>
+                    <td>Iztapalapa</td>
+                    <td><input type="checkbox" value="Iztapalapa"></td>
+                </tr>
+                <tr>
+                    <td>Milpa Alta</td>
+                    <td><input type="checkbox" value="Milpa Alta"></td>
+                </tr>
+                <tr>
+                    <td>Álvaro Obregón</td>
+                    <td><input type="checkbox" value="Alvaro Obregon"></td>
+                </tr>
+                <tr>
+                    <td>Tláhuac</td>
+                    <td><input type="checkbox" value="Tlahuac"></td>
+                </tr>
+                <tr>
+                    <td>Tlalpan</td>
+                    <td><input type="checkbox" value="Tlalpan"></td>
+                </tr>
+                <tr>
+                    <td>Xochimilco</td>
+                    <td><input type="checkbox" value="Xochimilco"></td>
+                </tr>
+                <tr>
+                    <td>Benito Juárez</td>
+                    <td><input type="checkbox" value="Benito Juarez"></td>
+                </tr>
+                <tr>
+                    <td>Cuauhtémoc</td>
+                    <td><input type="checkbox" value="Cuauhtemoc"></td>
+                </tr>
+                <tr>
+                    <td>Miguel Hidalgo</td>
+                    <td><input type="checkbox" value="Miguel Hidalgo"></td>
+                </tr>
+                <tr>
+                    <td>Venustiano Carranza</td>
+                    <td><input type="checkbox" value="Venustiano Carranza"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Comentario: la etiqueta BR se usa como un "avance de línea" -->
+        <BR>
+
+        <!-- Botón de envío al servidor -->
+        <input type="submit" value="Enviar alcaldías al servidor" onclick="enviarMuseosSeleccionados()">
+        
+        <!-- Contenedor para mostrar el resultado del servidor -->
+        <div id="resultado"></div>
+        <!-- <div id="rutitas"></div> -->
+        
+        <!-- Script JavaScript para obtener museos seleccionados -->
+        <script>
+            function enviarMuseosSeleccionados() {
+                // Obtener museos seleccionados
+                var museosSeleccionados = obtenerMuseosSeleccionados();
+                // Construir el mensaje
+                var mensaje = museosSeleccionados.join(',');
+                //
+                var processors = seleccionarNucleos();
+
+                fetch('http://localhost:8080/?mensaje=' + mensaje + '&processors=' + processors) // Corregido aquí
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('La solicitud no pudo ser completada correctamente.');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    var jsonData = JSON.parse(data);
+                    //resultado.innerHTML = "Se aceptaron las alcaldías <BR> <U>" + jsonData[0].distancia + "</U>"
+                    //Iterar sobre cada elemento del array
+                    variableTexto = ""
+                    for (var i = 0; i < jsonData.length; i++) {
+                        // Acceder a la propiedad distancia
+                        var distancia = jsonData[i].distancia;
+                        variableTexto = variableTexto + "distancia de la ruta: " + distancia + ",Ruta: ";
+                        console.log("Distancia:", distancia);
+
+                        // Iterar sobre cada elemento de la propiedad ruta
+                        for (var j = 0; j < jsonData[i].ruta.length; j++) {
+                            // Acceder al nombre de cada elemento de ruta
+                            var nombre = jsonData[i].ruta[j].museo_nombre+" ";
+                            variableTexto = variableTexto + nombre;
+                            console.log("Nombre de la ruta:", nombre);
+                        }
+                        variableTexto = variableTexto + "<br>";
+                    }
+                    variableTexto = variableTexto + "<BR>";
+                    resultado.innerHTML = variableTexto;
+
+                })
+                .catch(error => {
+                    alert('Hubo un error al realizar la solicitud:');
+                });
+            }
+            function obtenerMuseosSeleccionados() {
+                const checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+                const museosSeleccionados = Array.from(checkboxes).map(checkbox => checkbox.value);
+                return museosSeleccionados;
+            }
+        </script>
+    </body>
+</html>

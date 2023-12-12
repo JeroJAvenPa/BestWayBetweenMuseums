@@ -1,0 +1,70 @@
+<project>
+   <modelVersion>4.0.0</modelVersion>
+
+   <groupId>com.miServidor.App</groupId>
+   <artifactId>miServidor</artifactId>
+   <version>1</version>
+    
+   <dependencies>
+      <!-- Librerías a importar -->
+      <dependency>
+         <groupId>io.undertow</groupId>
+         <artifactId>undertow-core</artifactId>
+         <version>1.0.1.Final</version>
+      </dependency>
+
+      <dependency>
+         <groupId>io.undertow</groupId>
+         <artifactId>undertow-servlet</artifactId>
+         <version>1.0.1.Final</version>
+      </dependency>
+
+      <dependency>
+         <groupId>com.fasterxml.jackson.dataformat</groupId>
+         <artifactId>jackson-dataformat-csv</artifactId>
+         <version>2.13.0</version>
+      </dependency>
+
+      <dependency>
+         <groupId>com.fasterxml.jackson.core</groupId>
+         <artifactId>jackson-databind</artifactId>
+         <version>2.13.0</version> <!-- Utiliza la versión más reciente -->
+      </dependency>
+   </dependencies>
+
+   <build>
+      <plugins>
+      <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.11.0</version>
+            <configuration>
+                <encoding>UTF-8</encoding>
+            </configuration>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-resources-plugin</artifactId>
+            <version>3.2.0</version>
+            <configuration>
+                <encoding>UTF-8</encoding>
+            </configuration>
+        </plugin>
+         <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>1.2.1</version>
+            <configuration>
+               <mainClass>App</mainClass>
+            </configuration>
+            <executions>
+               <execution>
+                  <goals>
+                        <goal>java</goal>
+                  </goals>
+               </execution>
+            </executions>
+         </plugin>
+      </plugins>
+   </build>
+</project>
